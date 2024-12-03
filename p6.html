@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline and Internal CSS</title>
+  <style>
+    /* Internal CSS */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+    }
+
+    .internal-style {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Inline and Internal CSS </h1>
+
+  <!-- Internal CSS -->
+  <p class="internal-style">This paragraph is styled using internal CSS.</p>
+
+  <!-- Inline CSS -->
+  <p style="color: red; font-size: 18px;">This paragraph is styled using inline CSS.</p>
+
+  <!-- Mixed Styles -->
+  <p class="internal-style" style="font-size: 20px; text-decoration: underline;">
+    This paragraph combines internal and inline CSS.
+  </p>
+</body>
+</html>

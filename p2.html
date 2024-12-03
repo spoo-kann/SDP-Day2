@@ -3,68 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>Hotel Menu</title>
     <style>
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            margin: 20px;
         }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            margin-top: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #660029;
-            color: rgb(255, 255, 255);
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+        table {
             width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: pink;
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .price {
+            color: #28a745;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to DonBosco insitute of technology</h1>
-        <nav>
-            <a href="about">About Us</a>
-            <a href="courses">Courses</a>
-            <a href="admissions">Admissions</a>
-            <a href="contact">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Empowering Students for a Brighter Future</h2>
-        <p>
-            ABC College is committed to providing quality education and fostering a community of lifelong learners. 
-        </p>
-        <img src="college-image.jpg" alt="College Campus" style="max-width: 100%; height: auto;">
-    </main>
-    <footer>
-        <p>&copy; 2024 ABC College. All Rights Reserved.</p>
-        <p>DonBosco College Road, Kumbalagodu, Karnataka, ZIP | Phone: (123) 456-7890</p>
-    </footer>
+    <h1>Hotel Menu</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Dish Image</th>
+                <th>Dish Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="pasta.jpg" alt="Pasta"></td>
+                <td>Pasta</td>
+                <td class="price">200</td>
+            </tr>
+            <tr>
+                <td><img src="pizza.jpg" alt="Pizza"></td>
+                <td>Pizza</td>
+                <td class="price">300</td>
+            </tr>
+            <tr>
+                <td><img src="burger.jpg" alt="Burger"></td>
+                <td>Burger</td>
+                <td class="price">99</td>
+            </tr>
+            <tr>
+                <td><img src="salad.jpg" alt="Salad"></td>
+                <td>Salad</td>
+                <td class="price">150</td>
+            </tr>
+            <tr>
+                <td><img src="sushi.jpg" alt="Sushi"></td>
+                <td>Sushi</td>
+                <td class="price">300</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>

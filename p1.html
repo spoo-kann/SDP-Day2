@@ -1,20 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Title of the document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            margin: 5px 0;
+        }
+        nav li ul {
+            margin-left: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .product .price {
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#electronics">Electronics</a>
+                <ul>
+                    <li><a href="#mobile-phones">Mobile Phones</a></li>
+                    <li><a href="#laptops">Laptops</a></li>
+                    <li><a href="#cameras">Cameras</a></li>
+                </ul>
+            </li>
+            <li><a href="#furniture">Furniture</a>
+                <ul>
+                    <li><a href="#sofas">Sofas</a></li>
+                    <li><a href="#beds">Beds</a></li>
+                    <li><a href="#dining-tables">Dining Tables</a></li>
+                </ul>
+            </li>
+            <li><a href="#clothing">Clothing</a>
+                <ul>
+                    <li><a href="#mens-wear">Men's Wear</a></li>
+                    <li><a href="#womens-wear">Women's Wear</a></li>
+                    <li><a href="#kids-wear">Kids' Wear</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Electronics Section -->
+        <section id="electronics">
+            <h2>Electronics</h2>
+            <div class="product" id="mobile-phones">
+                <h3>Mobile Phone</h3>
+                <p class="price">$499</p>
+            </div>
+            <div class="product" id="laptops">
+                <h3>Laptop</h3>
+                <p class="price">$999</p>
+            </div>
+            <div class="product" id="cameras">
+                <h3>Camera</h3>
+                <p class="price">$699</p>
+            </div>
+        </section>
 
+        <!-- Furniture Section -->
+        <section id="furniture">
+            <h2>Furniture</h2>
+            <div class="product" id="sofas">
+                <h3>Sofa</h3>
+                <p class="price">$899</p>
+            </div>
+            <div class="product" id="beds">
+                <h3>Bed</h3>
+                <p class="price">$1299</p>
+            </div>
+            <div class="product" id="dining-tables">
+                <h3>Dining Table</h3>
+                <p class="price">$799</p>
+            </div>
+        </section>
+
+        <!-- Clothing Section -->
+        <section id="clothing">
+            <h2>Clothing</h2>
+            <div class="product" id="mens-wear">
+                <h3>Men's Wear</h3>
+                <p class="price">$49</p>
+            </div>
+            <div class="product" id="womens-wear">
+                <h3>Women's Wear</h3>
+                <p class="price">$59</p>
+            </div>
+            <div class="product" id="kids-wear">
+                <h3>Kids' Wear</h3>
+                <p class="price">$39</p>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

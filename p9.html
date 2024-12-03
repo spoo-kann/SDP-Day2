@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagonal Images with Borders</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+        .image {
+            position: absolute;
+            width: 150px;
+            height:150px;
+            border: 5px solid #000;
+            object-fit: cover;
+        }
+        .image1 {
+            top: 0;
+            left: 0;
+        }
+        .image2 {
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pasta.jpg" alt="Image 1" class="image image1">
+        <img src="burger.jpg" alt="Image 2" class="image image2">
+    </div>
+</body>
+</html>

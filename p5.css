@@ -1,0 +1,15 @@
+/* Type Selector */
+p {
+    color: blue; /* Applies to all <p> elements */
+  }
+  
+  /* Class Selector */
+  .green-text {
+    color: green; /* Applies to elements with class="green-text" */
+  }
+  
+  /* ID Selector */
+  #red-paragraph {
+    color: red; /* Applies to the element with id="red-paragraph" */
+  }
+  
